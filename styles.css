@@ -1,18 +1,205 @@
-header {
-  background-color: darkolivegreen;
-  color: aliceblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+  list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 2rem;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 15px;
-  font-family: Roboto;
-  font-weight: bold;
-}
-
-nav ul li a {
+.nav-item a {
   text-decoration: none;
-  list-style: none;
+  color: #444;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+  background-color: #6b73ff;
+  color: white;
+}
+
+/* Section Styles */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #6b73ff;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #6b73ff;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.audio-player {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Work Section */
+.projects-list {
+  list-style-type: none;
+  margin: 1.5rem 0;
+}
+
+.project-item {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-video {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Section */
+.resume-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-table th,
+.resume-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.resume-table th {
+  background-color: #6b73ff;
+  color: white;
+}
+
+.resume-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Contact Section */
+.contact-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1.5rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-group textarea {
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #6b73ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4d55d4;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer a {
+  color: #6b73ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
